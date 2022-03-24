@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head", {data: {title: data.title}}) %>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/directories.css" />
+  </head>
+  <body>
+    <%- include("../partials/header", {data: {back: data.back}}) %>
+    <div class="main-container">
+      <p><%= data.course.title %></p>
+      <br />
+      <% if (data.course.directories.length > 0) { %>
+      <ul class="content">
+        <% data.course.directories.forEach(function(directory){ %>
+        <li class="directory-link">
+          <a
+            href="<%= `/${data.course.link}/${directory.link}` %> "
+            class="special-link"
+          >
+            <%= directory.title %>
+          </a>
+        </li>
+        <!--  -->
+        <% }); %>
+      </ul>
+      <% } %>
+      <!--  -->
+    </div>
+    <%- include("../partials/footer") %>
+  </body>
+</html>

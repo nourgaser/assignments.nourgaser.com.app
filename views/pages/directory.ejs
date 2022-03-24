@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head", {data: {title: data.title}}) %>
+    <link rel="stylesheet" href="/styles/directory.css" />
+  </head>
+  <body>
+    <%- include("../partials/header", {data: {back: data.back}}) %>
+    <div class="main-container">
+      <p><%= `${data.course.title} - ${data.directory.title}` %></p>
+      <br />
+      <% if (data.directory.files.length > 0) { %>
+      <ul class="files">
+        <% data.directory.files.forEach(function(file){ %>
+        <li class="file">
+          <p><%= file %></p>
+          <a
+            href="/data/<%= `${data.course.link}/${file}` %> "
+            target="_blank"
+            download
+          >
+            <i class="fa-solid fa-download icon"></i>
+          </a>
+        </li>
+        <!--  -->
+        <% }); %>
+      </ul>
+      <% } %>
+      <!--  -->
+    </div>
+    <%- include("../partials/footer") %>
+  </body>
+</html>

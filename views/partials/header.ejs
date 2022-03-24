@@ -1,0 +1,8 @@
+<header>
+  <a href="/">
+    <img src="/img/logo.svg" alt="logo" class="logo" />
+  </a>
+  <% if (data.back) { %>
+  <a href="/<%= data.back.link %>" class="special-link"><%= data.back.text %></a>
+  <% } %>
+</header>

@@ -1,0 +1,44 @@
+{
+  "courses": [
+    {
+      "title": "Introduction to Databases (IS312)",
+      "link": "db1",
+      "directories": [
+        {
+          "title": "Assignment 1",
+          "link": "assignment1",
+          "files": ["assignment1.sql"]
+        },{
+          "title": "Assignment 2",
+          "link": "assignment2",
+          "files": []
+        }
+      ]
+    },
+    {
+      "title": "Data Communication and Network (CS301)",
+      "link": "data_comm",
+      "directories": []
+    },
+    {
+      "title": "Computer Graphics (CS402)",
+      "link": "comp_graphics",
+      "directories": []
+    },
+    {
+      "title": "Theory of Computation (CS)",
+      "link": "theory_of_comp",
+      "directories": []
+    },
+    {
+      "title": "Modern Development Tools (CS312)",
+      "link": "modern_dev_tools",
+      "directories": []
+    },
+    {
+      "title": "Compiler Design (CS-352)",
+      "link": "compiler_design",
+      "directories": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head", {data: {title: data.title}}) %>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <%- include("../partials/header", {data: {}}) %>
+    <div class="main-container">
+      <div class="content">
+        <% data.courses.forEach(function(course){ %>
+        <a href="/<%= course.link %>" class="special-link">
+          <%= course.title %>
+        </a>
+        <% }); %>
+      </div>
+    </div>
+    <%- include("../partials/footer") %>
+  </body>
+</html>

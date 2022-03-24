@@ -1,0 +1,14 @@
+.files {
+    height: 50vh;
+    margin: 2em;
+    border: 1px solid rgba(48, 48, 56, 0.9);
+    border-radius: 5px;
+    background-color: rgba(48, 48, 56, 0.35);
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0 1em;
+}
