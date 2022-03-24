@@ -23,7 +23,11 @@
     {
       "title": "Computer Graphics (CS402)",
       "link": "comp_graphics",
-      "directories": []
+      "directories": [{
+        "title": "Assignment 1",
+        "link": "assignment1",
+        "files": ["assignment1.cpp", "assignment1.png"]
+      }]
     },
     {
       "title": "Theory of Computation (CS)",
