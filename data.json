@@ -8,7 +8,8 @@
           "title": "Assignment 1",
           "link": "assignment1",
           "files": ["assignment1.sql"]
-        },{
+        },
+        {
           "title": "Assignment 2",
           "link": "assignment2",
           "files": []
@@ -23,11 +24,35 @@
     {
       "title": "Computer Graphics (CS402)",
       "link": "comp_graphics",
-      "directories": [{
-        "title": "Assignment 1",
-        "link": "assignment1",
-        "files": ["assignment1.cpp", "assignment1.png"]
-      }]
+      "directories": [
+        {
+          "title": "Assignment 1 (Section)",
+          "link": "assignment1_sec",
+          "files": ["assignment1.cpp", "assignment1.png"]
+        },
+        {
+          "title": "Lecture Notes",
+          "link": "lecture_notes",
+          "files": [
+            "ln01_intro.pdf",
+            "ln02_display_tech.pdf",
+            "ln03_color_models.pdf",
+            "ln04_opengl_overview.pdf",
+            "ln05_2d-viewing.pdf",
+            "ln06_2d-transformation.pdf"
+          ]
+        },
+        {
+          "title": "Assignment 1",
+          "link": "assignment1",
+          "files": ["assignment1.pdf"]
+        },
+        {
+          "title": "Assignment 2",
+          "link": "assignment2",
+          "files": ["assignment2.pdf"]
+        }
+      ]
     },
     {
       "title": "Theory of Computation (CS)",
