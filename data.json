@@ -19,7 +19,13 @@
     {
       "title": "Data Communication and Network (CS301)",
       "link": "data_comm",
-      "directories": []
+      "directories": [
+        {
+          "title": "Assignment 1",
+          "link": "assignment1",
+          "files": ["assignment1.pkt", "ios_commands.txt", "assignment1.pdf", "assignment1_submission.pdf"]
+        }
+      ]
     },
     {
       "title": "Computer Graphics (CS402)",
