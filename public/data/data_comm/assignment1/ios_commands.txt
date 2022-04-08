@@ -1,0 +1,61 @@
+#enter enable mode
+enable 
+
+#enter configure mode
+configure 
+
+#disable the default behavior of attempting to resolve invalid commands into an IP address
+#if you don't do this, and type in invalid command by accident, the switch tried to resolve it to an IP address and freezes for like 30s.
+no ip domain-lookup
+
+#set a password to the switch
+enable password somepass123 
+
+#exit configure mode
+exit 
+
+#check the current config
+show running-config 
+
+#save the current config (replace the startup config with the current one)
+copy running-config startup-config 
+
+#create vlans vlan1 and vlan2 with IDs 100, 101 respectively
+configure
+vlan 100
+name vlan1
+exit
+vlan 101
+name vlan2
+
+#back to configure mode
+exit
+
+#move FastEthernet 0/1 port to vlan1
+interface FastEthernet 0/1
+switchport access vlan 100 
+exit 
+
+#move FastEthernet 0/2 port to vlan1
+interface FastEthernet 0/2
+switchport access vlan 100 
+exit
+
+#move ports FastEthernet 0/5 and FastEthernet 0/6 to vlan2
+interface FastEthernet 0/5
+switchport access vlan 101 
+exit 
+interface FastEthernet 0/6
+switchport access vlan 101 
+exit
+
+#back to enable mode to verify
+exit
+show vlan
+
+#save the current config again
+copy running-config startup-config 
+
+References:
+https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/15-0_2_se/command/reference/cr3750.html
+https://www.netwrix.com/cisco_commands_cheat_sheet.html
